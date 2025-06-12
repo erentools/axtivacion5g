@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Activación 5G</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function validarFormulario() {
+        const nombre = document.getElementById('nombre').value;
+        const id = document.getElementById('id').value;
+        const numero = document.getElementById('numero').value;
+        if (nombre && id && numero) {
+            window.location.href = 'enviando.html';
+        } else {
+            alert("Complete todos los campos.");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Activación 5G</h1>
+        <input type="text" id="nombre" placeholder="Nombre completo">
+        <input type="text" id="id" placeholder="Identificación">
+        <input type="text" id="numero" placeholder="Número asociado a la línea">
+        <button onclick="validarFormulario()">Activar servicio</button>
+        <button onclick="window.location.href='login.html'">Iniciar sesión</button>
+    </div>
+</body>
+</html>
